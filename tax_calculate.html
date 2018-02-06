@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>tax calculate</title>
+<meta name="description" content="tax calculate.">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<link href="https://fonts.googleapis.com/css?family=Rammetto+One|Roboto+Slab:400,700" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="css/tax_calculate/tax_calculate.css">
+</head>
+<body id="body">
+
+  <div class="mainArea">
+    
+    <h1>tax calculate</h1>
+
+    <p>Which do you search consumption tax of country?</p>
+    <form id="inputArea">
+      <input class="radio_btn" id="JPN" type="radio" name="country" value="JPN" data-tax="0.08">
+      <label class="country_label" for="JPN">JPN</label>
+      <input class="radio_btn" id="USA" type="radio" name="country" value="USA" data-tax="0.0849">
+      <label class="country_label" for="USA">USA(New York)</label>
+      <input class="radio_btn" id="UK" type="radio" name="country" value="UK" data-tax="0.2">
+      <label class="country_label" for="UK">UK</label>
+      <input class="radio_btn" id="PRC" type="radio" name="country" value="PRC" data-tax="0.17">
+      <label class="country_label" for="PRC">CHINA</label>
+      <input class="radio_btn" id="SGP" type="radio" name="country" value="SGP" data-tax="0.070">
+      <label class="country_label" for="SGP">Singapore</label>
+      <input class="radio_btn" id="SWE" type="radio" name="country" value="SWE" data-tax="0.25">
+      <label class="country_label" for="SWE">Sweden</label>
+    </form>
+
+    <button id="btn" title="search tax rate">search</button>
+
+    <h3>tax rate</h3>
+    <p class="result" id="tax_rate"></p>
+    <form id="inputPriceArea">
+      <label><input id="price" type="text" name="price" size="20" placeholder="plese input price" value=""></label>
+    </form>
+
+    <button id="calculate_start" title="calculate start">calculate</button>
+
+    <h3>tax in price</h3>
+    <p class="result" id="sum"></p>
+  
+  </div>
+  <!-----   javascript   ----->
+  <script src="js/tax_calculate/tax_calculate.js"></script>
+  
+</body>
+</html>

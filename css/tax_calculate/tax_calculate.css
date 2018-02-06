@@ -1,0 +1,250 @@
+body {
+  background-image: url(img/main_image.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainArea {
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50px;
+  margin: 50px auto;
+  width: 750px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+
+/***********   radio btn   *******************/
+#inputArea input {
+  display: none;
+  overflow: hidden;
+}
+
+#inputArea label {
+  margin: 0px 0px 0px 50px;
+  position: relative;
+  width: 200px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.country_label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -37px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #000;
+  border-radius: 20px;
+}
+
+.radio_btn:checked + .country_label::after{
+  content: "";
+  position: absolute;
+  top: 9.5px;
+  left: -32.5px;
+  font-size: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #ffff00;
+}
+
+/*********   animation   *******************/
+
+.radio_btn:checked + .country_label::after {
+  animation-name: change_color;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes change_color {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+button:hover {
+  animation-name: change_background_color;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes change_background_color {
+  0%{
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
+
+.country_label:hover{
+  animation-name: change_character_color;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes change_character_color {
+  0%{
+    color: #0000ff;
+  }
+  50%{
+    color: #add8e6;
+  }
+  100%{
+    color: #20b2aa;
+  }
+}
+
+.result {
+  animation-name: change_font_color;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes change_font_color {
+  0%{
+    color: #000;
+  }
+  50%{
+    color: #ff6347;
+  }
+  100%{
+    color: #000;
+  }
+}
+
+/********   button   ************/
+button {
+  width: 200px;
+  margin: 30px 0px 0px 275px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgba(255,255,0,0.7);
+}
+
+/*******   subtitle   *************/
+
+h3 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0px
+}
+
+/**********   result   *************/
+
+.result {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/*****   input price   **************/
+#price {
+  display: block;
+  width: 300px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  margin: 0px 0px 0px 225px;
+  text-align: center;
+}
+
+
+
+/***********   smart phone   ***********************/
+@media screen and (max-width:767px){
+
+  .mainArea {
+    width: 375px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin: 20px 0px;
+  }
+
+  /***********   radio btn   *******************/
+
+  #inputArea label {
+    margin: 0px 0px 0px 100px
+  }
+
+
+  /********   button   ************/
+  button {
+    /*
+    width: 200px;
+    margin: 30px 0px 0px 275px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgba(255,255,0,0.7);
+    */
+    margin: 30px 0px 0px 87.5px;
+  }
+
+  /*****   input price   **************/
+  #price {
+    margin: 0px 0px 0px 37.5px
+  }
+  
+  
+  
+  
+  
+}
+
+
+/*******   google fonts   ************/
+/*
+font-family: 'Rammetto One', cursive;
+font-family: 'Roboto Slab', serif;
+*/
