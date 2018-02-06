@@ -26,7 +26,7 @@ jQueryを使用せずにアニメーションはCSSのアニメーションで�
 1、全てのファイルをフォークし、ローカルにクローンを作成。  
 2、ローカルに保存したHTMLファイルをウェブブラウザで開く。  
 ## デモサイトURL（ポートフォリオURL）
-[http://s-fukushima.sakura.ne.jp/web_api_library.html](http://s-fukushima.sakura.ne.jp/web_api_library.html "ポートフォリオURL")
+[http://s-fukushima.sakura.ne.jp/tax_calculate.html](http://s-fukushima.sakura.ne.jp/tax_calculate.html "ポートフォリオURL")
 
 ***
 ***
@@ -58,4 +58,4 @@ Component file/
 1、all files do fork and this all files do clone in local.  
 2、this local files open to web browser.  
 ## URL of Demo site(URL of my portfolio site)
-[http://s-fukushima.sakura.ne.jp/web_api_library.html](http://s-fukushima.sakura.ne.jp/web_api_library.html "URL of my portfolio site")
+[http://s-fukushima.sakura.ne.jp/tax_calculate.html](http://s-fukushima.sakura.ne.jp/tax_calculate.html "URL of my portfolio site")
