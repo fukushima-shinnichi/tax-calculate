@@ -33,31 +33,29 @@ jQueryを使用せずにアニメーションはCSSのアニメーションで�
 
 # automatic tax calculate
 ## Overview
-* this this website concept is can search address of library and can see the official site URL from prefecture.
-* 
+* this website concept is can automatic tax calculate.
+* this site didn't use jQuery. only javascript.
 * correspondence of responsive design.
 * my web design skill is this web site.
 ## Description
-if you selected prefecture, you can check this library map and this library official site.   
-**You must use your key of yahoo API and library API.**
+If you select country and push search button, you can show tax rate of this country.  
+And if you enter price, you can understand tax plus price.  
+If you play js file, you can change tax rate and this country.
 ## Component file
 ```
 Component file/
 ├─ README.md
-├─ jQuery_base                                               # folder of jQuery files.
-├─ fonts                                                     # folder of web fonts.(saving in this folder at Font Awesome.)
-├─ web_api_library.html                                      # Top page.（my coding）
+├─ tax_calculate.html                                      # Top page.（my coding）
 ├─ css/
-|   └─ web_api_library                                       # folder of css(saving in this folder at css of Font Awesome.)
-|          ├─ img                                            # folder of images.（image of this folder enter to css.）
-|          └─ web_api_library.css                            # file of top page css.（my coding）
+|   └─ tax_calculate                                       # folder of css(saving in this folder at css of Font Awesome.)
+|          ├─ img                                          # folder of images.（image of this folder enter to css.）
+|          └─ tax_calculate.css                            # file of top page css.（my coding）
 └─ js/
-    └─ web_api_library                                       # folder of js.
-           └─ web_api_library.js                             # file of top page js.(my coding)
+    └─ tax_calculate                                       # folder of js.
+           └─ tax_calculate.js                             # file of top page js.(my coding)
 ```
 ## Install
 1、all files do fork and this all files do clone in local.  
 2、this local files open to web browser.  
-**You must use your key of yahoo API and library API.**
 ## URL of Demo site(URL of my portfolio site)
 [http://s-fukushima.sakura.ne.jp/web_api_library.html](http://s-fukushima.sakura.ne.jp/web_api_library.html "URL of my portfolio site")
